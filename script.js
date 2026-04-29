@@ -119,7 +119,7 @@ document.addEventListener('click', function(e) {
   if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
     const href = e.target.getAttribute('href');
     
-    // Skip if it's the logo link (goes to external site)
+    
     if (e.target.classList.contains('logo') || e.target.classList.contains('footer-logo-link')) {
       return;
     }

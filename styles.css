@@ -21,7 +21,7 @@ button {
   font-family: inherit;
 }
 
-/* ===== NAVBAR ===== */
+/* ===== NAV ===== */
 .navbar {
   position: sticky;
   top: 0;
@@ -288,7 +288,7 @@ button {
   text-transform: uppercase;
 }
 
-/* ===== WHO ARE WE SECTION ===== */
+/* ===== WHO ARE WE ===== */
 .whoAreWe {
   background: #1e293b;
   padding: 4rem 1.5rem;
@@ -357,7 +357,7 @@ button {
   color: #d1d5db;
 }
 
-/* ===== WHAT SETS US APART SECTION ===== */
+/* ===== WHAT SETS US APART ===== */
 .whatSetsApart {
   background: #1e293b;
   padding: 4rem 1.5rem;
@@ -411,7 +411,7 @@ button {
   object-fit: cover;
 }
 
-/* ===== VALUES SECTION ===== */
+/* ===== OURVALUES  ===== */
 .values {
   background: white;
   padding: 4rem 1.5rem;
