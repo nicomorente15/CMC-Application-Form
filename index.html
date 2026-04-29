@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 
+  Name: Nicole Angelo Morente
+  GIT 480 Final Project - CMC Application Form
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CMC - Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/cmc.png">
+</head>
+<body>
+  <!-- Nav -->
+  <header class="navbar">
+    <nav class="navContainer">
+      <a href="https://www.cmcgroups.com/" class="logo">
+        <img src="images/cmc.png" alt="CMC Logo" class="logoImg">
+        <span>CMC</span>
+      </a>
+
+      <ul class="navLinks">
+        <li><a href="#whoAreWe">Who Are We</a></li>
+        <li><a href="#values">Our Values</a></li>
+        <li><a href="#socials">Socials</a></li>
+      </ul>
+
+      <button class="applyBtn navApply" onclick="openModal()">Apply Now →</button>
+
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile -->
+    <div class="mobileMenu" id="mobileMenu">
+      <ul class="mobileLinks">
+        <li><a href="#whoAreWe" onclick="toggleMenu()">Who Are We</a></li>
+        <li><a href="#values" onclick="toggleMenu()">Our Values</a></li>
+        <li><a href="#socials" onclick="toggleMenu()">Socials</a></li>
+      </ul>
+      <button class="applyBtn mobileApply" onclick="openModal(); toggleMenu();">Apply Now →</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="heroContainer">
+      <div class="heroImage">
+        <img src="images/cmcFirstImage.png" alt="CMC Team">
+      </div>
+      <div class="heroContent">
+        <h1>Join the <span class="highlight">CMC Team</span></h1>
+        <p>Unlock your potential in a dynamic environment where leadership, 
+          innovation, and teamwork pave the way for extraordinary career growth. 
+          We don't just offer jobs; we build futures.</p>
+        <div class="heroActions">
+          <button class="applyBtn" onclick="openModal()">Apply Now →</button>
+          <div class="tagline">
+            <div class="line"></div>
+            <span>Start your career today</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who Are We  -->
+  <section id="whoAreWe" class="whoAreWe">
+    <div class="container">
+      <h2>Who are we?</h2>
+      <div class="whoGrid">
+        <div class="whoImage">
+          <img src="images/cmcWho.png" alt="CMC Team">
+        </div>
+        <div class="whoContent">
+          <h3>OUR STORY</h3>
+          <p>At CMC, we know that starting a career is tough enough without the confusion 
+            of where to begin. Founded on the principles of mentorship and hands-on development, 
+            CMC has become a premier destination for ambitious talent. With partnerships across 
+            major industries, we're on a mission to make career progression transparent, achievable, 
+            and tailored to your personal goals. We believe in building leaders from the ground up.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Sets Us Apart  -->
+  <section id="whatSetsUsApart" class="whatSetsApart">
+    <div class="container">
+      <div class="apartGrid">
+        <div class="apartContent">
+          <h3>WHAT SETS US APART</h3>
+          <p>It's our unique blend of structured training and personal mentorship. While our systems 
+            provide the framework for success, our expert leaders are here to ensure you get the 
+            support you need, because we believe in supporting people, not just hitting numbers. 
+            At CMC, you're more than just an employee. You're a partner, and we're here to help you 
+            get the skills you need to keep growing and thriving in a competitive marketplace.</p>
+        </div>
+        <div class="apartImage">
+          <img src="images/cmcApart.png" alt="What Sets Us Apart">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values  -->
+  <section id="values" class="values">
+    <div class="container">
+      <div class="valuesHeader">
+        <div>
+          <h2>Our values</h2>
+          <p>What we love and stand for every day. These principles guide our actions and define our culture.</p>
+        </div>
+      </div>
+      <div class="valuesGrid" id="valuesGrid"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="socials" class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="footerBrand">
+          <div class="footerLogoContainer">
+            <a href="https://www.cmcgroups.com/" class="footerLogoLink">
+              <img src="images/cmc.png" alt="CMC Logo">
+            </a>
+          </div>
+          <p class="footerName">CMC</p>
+        </div>
+
+        <div class="footerContact">
+          <h3>CONTACT US</h3>
+          <div class="contactItems">
+            <div class="contactItem">
+              <img src="images/Footer/location.svg" alt="Location icon" class="contactIcon">
+              <span>17777 Center Ct Dr N, Cerritos, CA 90703</span>
+            </div>
+            <div class="contactItem">
+              <img src="images/Footer/phone.svg" alt="Phone icon" class="contactIcon">
+              <a href="tel:888-915-0883">888-915-0883</a>
+            </div>
+            <div class="contactItem">
+              <img src="images/Footer/email.svg" alt="Email icon" class="contactIcon">
+              <a href="mailto:cornerstonemgmt@cmcgroups.com">cornerstonemgmt@cmcgroups.com</a>
+            </div>
+          </div>
+
+          <div class="socialLinks">
+            <a href="#" aria-label="Facebook" class="socialBtn">
+              <img src="images/Footer/Social/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#" aria-label="Instagram" class="socialBtn">
+              <img src="images/Footer/Social/instagram.svg" alt="Instagram">
+            </a>
+            <a href="#" aria-label="LinkedIn" class="socialBtn">
+              <img src="images/Footer/Social/linkedin.svg" alt="LinkedIn">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerBottom">
+        <p>Copyright ©2026 CMC Group | All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Modal -->
+  <div id="applicationModal" class="modal">
+    <div class="modalContent">
+      <!-- Left side - Video -->
+      <div class="modalLeft">
+        <div class="videoContainer">
+          <iframe src="https://www.youtube.com/embed/wAoigwzNIq4?start=1" title="CMC Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="modalInfo">
+          <p>After submitting your application, a new window will open for you to schedule a call with our recruiting team via Calendly.</p>
+        </div>
+      </div>
+
+      <!-- Right side - Form -->
+      <div class="modalRight">
+        <button class="modalClose" onclick="closeModal()">✕</button>
+        
+        <div class="formHeader">
+          <h2>Apply Now</h2>
+          <p>Fill out the form below to start your journey with CMC.</p>
+        </div>
+
+        <form id="applicationForm" onsubmit="handleFormSubmit(event)">
+          <div class="formRow">
+            <div class="formGroup">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+            </div>
+            <div class="formGroup">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            </div>
+          </div>
+
+          <div class="formRow">
+            <div class="formGroup">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="formGroup">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required>
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <label for="role">What role are you interested in?</label>
+            <select id="role" name="role" required>
+              <option value="">Select An Option</option>
+              <option value="entry-level-sales">Entry Level Sales</option>
+              <option value="customer-service">Customer Service/Retention</option>
+              <option value="outside-sales-b2b">Outside Sales B2B</option>
+              <option value="team-lead">Team Lead</option>
+            </select>
+          </div>
+
+          <div class="formGroup">
+            <label>Are you looking for a part-time or a full-time position?</label>
+            <div class="radioGroup">
+              <label class="radioOption">
+                <input type="radio" name="employmentType" value="full-time" checked>
+                <span>Full-time</span>
+              </label>
+              <label class="radioOption">
+                <input type="radio" name="employmentType" value="part-time">
+                <span>Part-time</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="formRow">
+            <div class="formGroup">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="City" required>
+            </div>
+            <div class="formGroup">
+              <label for="state">State</label>
+              <select id="state" name="state" required>
+                <option value="">Select State</option>
+                <option value="AZ">AZ</option>
+                <option value="CA">CA</option>
+                <option value="FL">FL</option>
+                <option value="GA">GA</option>
+                <option value="IL">IL</option>
+                <option value="MI">MI</option>
+                <option value="NC">NC</option>
+                <option value="NY">NY</option>
+                <option value="OH">OH</option>
+                <option value="PA">PA</option>
+                <option value="TX">TX</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="formGroup">
+            <label for="howDidYouHear">How did you hear about CMC?</label>
+            <select id="howDidYouHear" name="howDidYouHear" required>
+              <option value="">Select An Option</option>
+              <option value="linkedin">Linkedin</option>
+              <option value="indeed">Indeed</option>
+              <option value="referral">Referral</option>
+              <option value="social-media">Social Media</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="applyBtn formSubmit">Apply →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
